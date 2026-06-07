@@ -59,7 +59,7 @@ const inventions = [
 /* =========================  5. VIDEOS  =========================== */
 /* Paste a full YouTube watch URL. The ID is auto-extracted.         */
 const videos = [
-  { url:"", title:"Sugarcane Harvest Season", desc:"From standing cane to the milling central." },
+  { url:"https://www.youtube.com/watch?v=_8NPoL9fJNA", title:"Sugarcane Harvest Season", desc:"From standing cane to the milling central." },
   { url:"", title:"A Day on the Farm",        desc:"Sunrise to sundown with the carabao." },
   { url:"", title:"Building Farm Tools",       desc:"Inside Solomon's workshop." },
   { url:"", title:"Raising Pigs & Chickens",  desc:"How the in-between seasons get funded." },
