@@ -361,12 +361,12 @@ h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.04;letter-spac
     border-radius:var(--radius);
     overflow:hidden;
 
-    background:#2b1c0d;
+    background:transparent;
 
-    border:1px solid rgba(201,162,75,.30);
+    border:none;
 
     box-shadow:
-        0 30px 70px -35px rgba(0,0,0,.75);
+        none;
 }
 
 .captain__photo img{
