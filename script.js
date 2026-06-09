@@ -35,7 +35,7 @@ const socialLinks = {
 
 /* =======================  3. FARM CROPS  ========================= */
 const farmCrops = [
-  { name:"Sugarcane Farming", img:"", wide:true,
+  { name:"Sugarcane Farming", img:"images/Montage_1.png", wide:true,
     text:"The heart of the operation. Roughly 18 hectares of rented cane, harvested once a year and milled at the local central — the crop that turned a dream into a livelihood." },
   { name:"Cassava Farming", img:"",
     text:"Hardy, low-maintenance, and reliable — cassava was one of the first crops Solomon planted when he started his own land." },
@@ -60,11 +60,11 @@ const inventions = [
 /* Paste a full YouTube watch URL. The ID is auto-extracted.         */
 const videos = [
   { url:"https://www.youtube.com/watch?v=_8NPoL9fJNA", title:"Sugarcane Harvest Season", desc:"From standing cane to the milling central." },
-  { url:"https://www.facebook.com/reel/2051540705394939", title:"A Day on the Farm",        desc:"Sunrise to sundown with the carabao." },
-  { url:"https://www.facebook.com/reel/2471919909914878", title:"Building Farm Tools",       desc:"Inside Solomon's workshop." },
-  { url:"https://www.facebook.com/reel/1457250065876932", title:"Raising Pigs & Chickens",  desc:"How the in-between seasons get funded." },
-  { url:"https://www.facebook.com/reel/1275144594726140", title:"Planting Day",              desc:"Preparing the field for the next crop." },
-  { url:"https://www.facebook.com/reel/1675819576874807", title:"The Captain Appears",       desc:"A little fun after the harvest." }
+  { url:"https://www.youtube.com/watch?v=X3Bd-vqOao0", title:"A Day on the Farm",        desc:"Sunrise to sundown with the carabao." },
+  { url:"https://www.youtube.com/watch?v=fU5zsyld4i8", title:"Building Farm Tools",       desc:"Inside Solomon's workshop." },
+  { url:"https://www.youtube.com/watch?v=RbGfI8n5xH8", title:"Raising Pigs & Chickens",  desc:"How the in-between seasons get funded." },
+  { url:"https://www.youtube.com/watch?v=PuO14QqvHOU", title:"Planting Day",              desc:"Preparing the field for the next crop." },
+  { url:"https://www.youtube.com/watch?v=Y5BuLfg6qJs", title:"The Captain Appears",       desc:"A little fun after the harvest." }
 ];
 
 /* ========================  6. LIVESTOCK  ========================= */
