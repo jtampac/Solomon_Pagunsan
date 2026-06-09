@@ -60,11 +60,11 @@ const inventions = [
 /* Paste a full YouTube watch URL. The ID is auto-extracted.         */
 const videos = [
   { url:"https://www.youtube.com/watch?v=_8NPoL9fJNA", title:"Sugarcane Harvest Season", desc:"From standing cane to the milling central." },
-  { url:"", title:"A Day on the Farm",        desc:"Sunrise to sundown with the carabao." },
-  { url:"", title:"Building Farm Tools",       desc:"Inside Solomon's workshop." },
-  { url:"", title:"Raising Pigs & Chickens",  desc:"How the in-between seasons get funded." },
-  { url:"", title:"Planting Day",              desc:"Preparing the field for the next crop." },
-  { url:"", title:"The Captain Appears",       desc:"A little fun after the harvest." }
+  { url:"https://www.facebook.com/reel/2051540705394939", title:"A Day on the Farm",        desc:"Sunrise to sundown with the carabao." },
+  { url:"https://www.facebook.com/reel/2471919909914878", title:"Building Farm Tools",       desc:"Inside Solomon's workshop." },
+  { url:"https://www.facebook.com/reel/1457250065876932", title:"Raising Pigs & Chickens",  desc:"How the in-between seasons get funded." },
+  { url:"https://www.facebook.com/reel/1275144594726140", title:"Planting Day",              desc:"Preparing the field for the next crop." },
+  { url:"https://www.facebook.com/reel/1675819576874807", title:"The Captain Appears",       desc:"A little fun after the harvest." }
 ];
 
 /* ========================  6. LIVESTOCK  ========================= */
