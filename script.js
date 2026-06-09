@@ -43,7 +43,7 @@ const farmCrops = [
     text:"A dependable rotation crop that helps keep the soil and the cash flow working between the long sugarcane seasons." },
   { name:"Livestock Raising", img:"",
     text:"Pigs and chickens that bridge the gap between harvests, providing steady monthly income for the family." },
-  { name:"Carabao Farming", img:"", wide:true,
+  { name:"Carabao Farming", img:"images/Carabao_Montage_.png", wide:true,
     text:"The Filipino farmer's truest partner. Raised, worked, and cared for on the land — and sold when the season calls for it." }
 ];
 
