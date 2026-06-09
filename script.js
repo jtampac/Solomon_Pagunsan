@@ -37,11 +37,11 @@ const socialLinks = {
 const farmCrops = [
   { name:"Sugarcane Farming", img:"images/Montage_1.png", wide:true,
     text:"The heart of the operation. Roughly 18 hectares of rented cane, harvested once a year and milled at the local central — the crop that turned a dream into a livelihood." },
-  { name:"Cassava Farming", img:"images/Cassava.png",
+  { name:"Cassava Farming", img:"images/Cassava.jpg",
     text:"Hardy, low-maintenance, and reliable — cassava was one of the first crops Solomon planted when he started his own land." },
-  { name:"Corn Farming", img:"",
+  { name:"Corn Farming", img:"images/corn-harvest.jpg",
     text:"A dependable rotation crop that helps keep the soil and the cash flow working between the long sugarcane seasons." },
-  { name:"Livestock Raising", img:"",
+  { name:"Livestock Raising", img:"images/livestock-04.jpg",
     text:"Pigs and chickens that bridge the gap between harvests, providing steady monthly income for the family." },
   { name:"Carabao Farming", img:"images/Carabao_Montage_.png", wide:true,
     text:"The Filipino farmer's truest partner. Raised, worked, and cared for on the land — and sold when the season calls for it." }
@@ -49,8 +49,8 @@ const farmCrops = [
 
 /* =====================  4. WORKSHOP / INVENTIONS  ================ */
 const inventions = [
-  { name:"Modified Spading Tools", note:"Field-tested ergonomics", img:"", tall:true },
-  { name:"Sugarcane Hand Tools",   note:"Made for the cane rows",   img:"" },
+  { name:"Modified Spading Tools", note:"Field-tested ergonomics", img:"images/modified-spading.jpg", tall:true },
+  { name:"Sugarcane Hand Tools",   note:"Made for the cane rows",   img:"images/workshop-01.jpg" },
   { name:"Equipment Modifications",note:"Repaired & re-engineered", img:"" },
   { name:"Fabrication Projects",   note:"Welding & metalwork",      img:"" },
   { name:"Agricultural Innovations",note:"Practical farm solutions",img:"", tall:true }
@@ -69,10 +69,10 @@ const videos = [
 
 /* ========================  6. LIVESTOCK  ========================= */
 const livestock = [
-  { name:"Pigs",        img:"", text:"Raised for sale roughly every four months. Inquire for availability and pricing." },
-  { name:"Chickens",    img:"", text:"Free-range farm chickens — a steady part of the farm's monthly cycle." },
-  { name:"Carabao",     img:"", text:"Working water buffalo, occasionally available. Message to ask." },
-  { name:"Farm Animals",img:"", text:"Other livestock raised on the farm from season to season." }
+  { name:"Pigs",        img:"images/livestock-02.jpg", text:"Raised for sale roughly every four months. Inquire for availability and pricing." },
+  { name:"Chickens",    img:"images/farm-02.jpg", text:"Free-range farm chickens — a steady part of the farm's monthly cycle." },
+  { name:"Carabao",     img:"images/carabao-team.jpg", text:"Working water buffalo, occasionally available. Message to ask." },
+  { name:"Farm Animals",img:"images/livestock-04.jpg", text:"Other livestock raised on the farm from season to season." }
 ];
 
 /* ===========================  7. PRESS  ========================== */
