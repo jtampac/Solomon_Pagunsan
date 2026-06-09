@@ -37,7 +37,7 @@ const socialLinks = {
 const farmCrops = [
   { name:"Sugarcane Farming", img:"images/Montage_1.png", wide:true,
     text:"The heart of the operation. Roughly 18 hectares of rented cane, harvested once a year and milled at the local central — the crop that turned a dream into a livelihood." },
-  { name:"Cassava Farming", img:"",
+  { name:"Cassava Farming", img:"images/Cassava.png",
     text:"Hardy, low-maintenance, and reliable — cassava was one of the first crops Solomon planted when he started his own land." },
   { name:"Corn Farming", img:"",
     text:"A dependable rotation crop that helps keep the soil and the cash flow working between the long sugarcane seasons." },
