@@ -13,7 +13,7 @@
 /* =======================  1. MEDIA ASSETS  ======================= */
 /* Paste direct image URLs (https://...) to replace placeholders.    */
 const siteAssets = {
-  heroImage:"images/Montage_1.png",   // large cinematic farm image for the hero
+  heroImage:"",   // large cinematic farm image for the hero
   workshopImage:    "",   // (reserved) workshop backdrop
   captainImage:     "",   // backdrop for the "Captain" section
   galleryImages: [        // gallery photos (any number, any order)
