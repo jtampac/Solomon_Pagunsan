@@ -16,9 +16,16 @@ const siteAssets = {
   heroImage:"",   // large cinematic farm image for the hero
   workshopImage:    "",   // (reserved) workshop backdrop
   captainImage:     "",   // backdrop for the "Captain" section
-  galleryImages: [        // gallery photos (any number, any order)
-    "", "", "", "", "", "", "", "", ""
-  ]
+  galleryImages: [ "images/farm-01.jpg",
+    "images/hero-collage_5.jpg",
+    "images/farm-03.jpg",
+    "images/hero-collage_4.jpg",
+    "images/hero-collage_1.jpg",
+    "images/hero-collage_2.jpg",
+    "images/hero-collage_3.jpg",
+    "images/sugarcane-field.jpg",
+    "images/farm-05.jpg"
+                 ]
 };
 
 /* =======================  2. SOCIAL LINKS  ======================= */
