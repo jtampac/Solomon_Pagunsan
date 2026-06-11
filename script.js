@@ -6,6 +6,9 @@
      1. siteAssets   -> hero image, section images, gallery photos
      2. socialLinks  -> all social / contact URLs
      3. farmCrops / inventions / videos / livestock / press
+     4. sponsors            -> partner logo banner (unlimited entries)
+     5. mediaKit            -> audience stats shown to brands
+     6. partnershipServices -> "Work With Solomon" service cards
    Paste a URL between the quotes "" to set an image or video.
    Leave a value as "" to keep the elegant built-in placeholder.
 =================================================================== */
@@ -88,6 +91,51 @@ const press = [
     url:"https://mb.com.ph/2026/04/08/sweet-success-high-school-graduate-earns-1m-a-year-as-a-sugarcane-farmer" },
   { outlet:"Agriculture Magazine", title:"He left for the city, came back a farmer — and now earns a million yearly from sugarcane", meta:"Feature · 2026",
     url:"https://agriculture.com.ph/2026/03/20/he-left-for-the-city-came-back-a-farmer-and-now-earns-a-million-yearly-from-sugarcane/" }
+];
+
+/* ====================  8. PARTNERSHIPS & SPONSORS  =============== */
+/* Add as many sponsors as needed — the banner scales automatically.
+   logo -> direct image URL (PNG with transparency looks best).
+   url  -> optional link to the sponsor's page ("" = not clickable).
+   Leave logo as "" to show a professional name placeholder.        */
+const sponsors = [
+  { name:"Sponsor 1", logo:"images/sponsors/sponsor1.png", url:"" },
+  { name:"Sponsor 2", logo:"images/sponsors/sponsor2.png", url:"" },
+  { name:"Sponsor 3", logo:"", url:"" },
+  { name:"Sponsor 4", logo:"", url:"" },
+  { name:"Sponsor 5", logo:"", url:"" },
+  { name:"Sponsor 6", logo:"", url:"" }
+];
+
+/* ========================  9. MEDIA KIT  ========================= */
+/* Editable audience statistics shown to brands & agencies.
+   Type the numbers as text, e.g. "120K", "85,000", "1.2M".
+   Leave a value as "" to show "On request".                        */
+const mediaKit = {
+  facebookFollowers:  "",
+  youtubeSubscribers: "",
+  tiktokFollowers:    "",
+  monthlyReach:       "",
+  location:           "Philippines"
+};
+
+/* ===================  10. PARTNERSHIP SERVICES  ================== */
+/* The "Work With Solomon" cards. Edit titles & descriptions freely. */
+const partnershipServices = [
+  { name:"Product Endorsements",
+    text:"Authentic, field-tested endorsements of agricultural products, tools, and equipment — shown working on a real Negros farm." },
+  { name:"Sponsored Videos",
+    text:"Dedicated or integrated brand features across YouTube, Facebook, and TikTok, produced in Solomon's honest documentary style." },
+  { name:"Farm Visits",
+    text:"Hosted visits to the farm for brands, media, schools, and organizations — see the operation and the story up close." },
+  { name:"Event Guesting",
+    text:"Speaking engagements, guest appearances, and 'The Captain' performances for fiestas, expos, and corporate events." },
+  { name:"Brand Collaborations",
+    text:"Long-term ambassadorships and campaigns with brands that share a genuine commitment to Filipino farmers." },
+  { name:"Community Events",
+    text:"Partnerships on community programs, farmer meet-ups, and outreach activities across Negros and beyond." },
+  { name:"Agricultural Promotions",
+    text:"Campaigns that promote crops, livestock, farm technology, and agri-services to an engaged farming audience." }
 ];
 
 /* ===================================================================
@@ -212,6 +260,70 @@ const press = [
     mg.appendChild(a);
   });
 
+  /* ----------------- WORK WITH SOLOMON (services) ----------------- */
+  const sg = $("#servicesGrid");
+  if (sg) {
+    partnershipServices.forEach((s, i) => {
+      const card = document.createElement("article");
+      card.className = "service reveal";
+      card.innerHTML = `
+        <span class="service__index">0${i + 1}</span>
+        <h3 class="service__title">${s.name}</h3>
+        <p class="service__text">${s.text}</p>
+        <a class="service__link" href="#contact">Inquire &rarr;</a>`;
+      sg.appendChild(card);
+    });
+  }
+
+  /* --------------------------- MEDIA KIT ------------------------- */
+  const mk = $("#mediaKitGrid");
+  if (mk) {
+    const stat = (v) => (v && String(v).trim()) ? v : "On request";
+    const kitItems = [
+      { label:"Facebook Audience", value: stat(mediaKit.facebookFollowers),  note:"Followers on the main page" },
+      { label:"YouTube Audience",  value: stat(mediaKit.youtubeSubscribers), note:"Channel subscribers" },
+      { label:"TikTok Audience",   value: stat(mediaKit.tiktokFollowers),    note:"Followers on TikTok" },
+      { label:"Monthly Reach",     value: stat(mediaKit.monthlyReach),       note:"Combined views across platforms" },
+      { label:"Location",          value: stat(mediaKit.location),           note:"Bayawan City, Negros Oriental" }
+    ];
+    kitItems.forEach((k) => {
+      const card = document.createElement("div");
+      card.className = "kit-card reveal" + (k.value === "On request" ? " kit-card--pending" : "");
+      card.innerHTML = `
+        <span class="kit-card__label">${k.label}</span>
+        <span class="kit-card__value">${k.value}</span>
+        <span class="kit-card__note">${k.note}</span>`;
+      mk.appendChild(card);
+    });
+  }
+
+  /* ------------------- PARTNERSHIPS & SPONSORS -------------------- */
+  const track = $("#sponsorsTrack");
+  if (track && sponsors.length) {
+    const buildItem = (s) => {
+      const tag = (s.url && s.url.trim()) ? "a" : "div";
+      const el = document.createElement(tag);
+      el.className = "sponsor";
+      if (tag === "a") { el.href = s.url; el.target = "_blank"; el.rel = "noopener"; }
+      if (s.logo && s.logo.trim()) {
+        el.innerHTML = `<img src="${s.logo}" alt="${s.name}" loading="lazy" decoding="async"
+          onerror="this.parentNode.classList.add('sponsor--ph');this.outerHTML='<span class=\\'sponsor__name\\'>${s.name}</span>'">`;
+      } else {
+        el.classList.add("sponsor--ph");
+        el.innerHTML = `<span class="sponsor__name">${s.name}</span>`;
+      }
+      return el;
+    };
+    /* duplicate the set until the track is comfortably wider than 2x
+       the viewport, so the -50% loop is always seamless */
+    const sets = Math.max(2, Math.ceil((window.innerWidth * 2) / (sponsors.length * 220)) * 2);
+    for (let r = 0; r < sets; r++) {
+      sponsors.forEach((s) => track.appendChild(buildItem(s)));
+    }
+    /* keep speed consistent regardless of how many sponsors exist */
+    track.style.animationDuration = Math.max(24, sponsors.length * sets * 2.4) + "s";
+  }
+
   /* ---------------------------- GALLERY -------------------------- */
   const gm = $("#galleryMasonry");
   const photos = siteAssets.galleryImages.length ? siteAssets.galleryImages : new Array(9).fill("");
@@ -219,7 +331,7 @@ const press = [
     const item = document.createElement("div");
     item.className = "gallery__item reveal";
     if (src && src.trim()) {
-      item.innerHTML = `<img src="${src}" alt="Solomon Pagunsan farm photo ${i + 1}" loading="lazy">`;
+      item.innerHTML = `<img src="${src}" alt="Solomon Pagunsan farm photo ${i + 1}" loading="lazy" decoding="async">`;
       item.addEventListener("click", () => openImage(src));
     } else {
       item.innerHTML = `<div class="ph">Farm Photo ${i + 1}</div>`;
