@@ -99,7 +99,7 @@ const press = [
    url  -> optional link to the sponsor's page ("" = not clickable).
    Leave logo as "" to show a professional name placeholder.        */
 const sponsors = [
-  { name:"Sponsor 1", logo:"images/sponsors/sponsor1.png", url:"" },
+  { name:"Sponsor 1", logo:"images/sponsors/JI_Telecom.png", url:"https://www.jitelecom.ph/" },
   { name:"Sponsor 2", logo:"images/sponsors/sponsor2.png", url:"" },
   { name:"Sponsor 3", logo:"", url:"" },
   { name:"Sponsor 4", logo:"", url:"" },
