@@ -308,19 +308,19 @@
       {
         "name": "Equipment Modifications",
         "note": "Repaired & re-engineered",
-        "img": "",
+        "img": "images/Tool_1.jpg",
         "tall": false
       },
       {
         "name": "Fabrication Projects",
         "note": "Welding & metalwork",
-        "img": "",
+        "img": "images/Tool_2.jpg",
         "tall": false
       },
       {
         "name": "Agricultural Innovations",
         "note": "Practical farm solutions",
-        "img": "",
+        "img": "images/Tools_3.jpg",
         "tall": true
       }
     ]
@@ -384,7 +384,7 @@
       {
         "name": "Napier Grass Cuttings",
         "desc": "Fast-growing Napier (elephant) grass planting material — a reliable, high-yield forage for livestock feed.",
-        "img": "",
+        "img": "images/Napier_1.jpg",
         "category": "Planting Material"
       },
       {
@@ -587,19 +587,19 @@
         "url": "https://www.jitelecom.ph/"
       },
       {
-        "name": "Sponsor 2",
-        "logo": "",
-        "url": ""
+        "name": "GoTraktora",
+        "logo": "images/sponsors/Icon-Horizontalx400.png",
+        "url": "https://gotraktora.com/"
       },
       {
-        "name": "Sponsor 3",
-        "logo": "",
-        "url": ""
+        "name": "MMTT Laptop Services",
+        "logo": "images/sponsors/MMTT_Logo.jpg",
+        "url": "https://www.facebook.com/p/MMTT-Laptop-Service-Center-Bayawan-100063534807228/"
       },
-      {
-        "name": "Sponsor 4",
-        "logo": "",
-        "url": ""
+     {
+        "name": "Skygo Philippines",
+        "logo": "images/sponsors/Skygo.png",
+        "url": "https://www.facebook.com/skygoph"
       },
       {
         "name": "Sponsor 5",
