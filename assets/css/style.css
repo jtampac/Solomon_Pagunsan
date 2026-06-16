@@ -186,7 +186,7 @@ h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.04;letter-spac
   background:
     radial-gradient(120% 80% at 70% 20%, rgba(125,154,79,.35), transparent 60%),
     linear-gradient(160deg,#2b4a30,#1f3d2b 40%,#13261a);
-  background-size:cover;background-position:center;
+  background-size:cover;background-position:bottom;
   transform:scale(1.04);
 }
 /* subtle field texture when no photo is set */
