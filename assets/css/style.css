@@ -636,11 +636,20 @@ h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.04;letter-spac
 
 .sponsor{flex:none;display:grid;place-items:center;}
 .sponsor img{
-  height:clamp(44px,6vw,72px);width:auto;max-width:220px;object-fit:contain;
-  filter:grayscale(1) contrast(.9);opacity:.75;
-  transition:filter .35s var(--ease),opacity .35s var(--ease),transform .35s var(--ease);
+  height:clamp(44px,5vw,72px);
+  width:auto;
+  max-width:220px;
+  object-fit:contain;
+  filter:none;
+  opacity:1;
+  transition:transform .35s var(--ease);
 }
-.sponsor:hover img{filter:none;opacity:1;transform:translateY(-2px);}
+
+.sponsor:hover img{
+  filter:none;
+  opacity:1;
+  transform:translateY(-2px);
+}
 .sponsor--ph{
   border:1px dashed var(--beige);border-radius:var(--radius);
   padding:.9rem 1.8rem;background:var(--cream);
