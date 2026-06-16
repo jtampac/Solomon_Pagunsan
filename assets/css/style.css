@@ -316,7 +316,7 @@ h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.04;letter-spac
     inset:0;
     background:linear-gradient(135deg,#3a2a16,#1d1409);
     background-size:cover;
-    background-position:center;
+    background-position:bottom;
 }
 
 .captain__media::after{
