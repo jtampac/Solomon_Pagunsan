@@ -1258,61 +1258,56 @@ a.social-stat:hover{transform:translateY(-2px);background:var(--cream);}
   .learn-gallery{gap:.7rem;}
   .learn-gallery__item{aspect-ratio:1/1;}
 }
-
 /* =========================================================
-   SOCIAL MEDIA BRAND ACCENTS
+   FINAL CONSOLIDATED OVERRIDES
 ========================================================= */
 
+/* Social platform accents */
 .social-stat{
   position:relative;
   overflow:hidden;
   background:transparent;
-  border-top:4px solid transparent;
+  border-top:3px solid transparent;
 }
 
-/* Facebook — first and second cards */
 .social-stat:nth-child(1),
 .social-stat:nth-child(2){
   background:rgba(24,119,242,.045);
-  border-top-color:#1877F2;
+  border-top-color:#1877f2;
 }
 
 .social-stat:nth-child(1) .social-stat__value,
 .social-stat:nth-child(2) .social-stat__value,
 .social-stat:nth-child(1) .social-stat__platform,
 .social-stat:nth-child(2) .social-stat__platform{
-  color:#1877F2;
+  color:#1877f2;
 }
 
-/* YouTube — third card */
 .social-stat:nth-child(3){
-  background:rgba(255,0,0,.04);
-  border-top-color:#FF0000;
+  background:rgba(255,0,0,.045);
+  border-top-color:#ff0000;
 }
 
 .social-stat:nth-child(3) .social-stat__value,
 .social-stat:nth-child(3) .social-stat__platform{
-  color:#D90000;
+  color:#d90000;
 }
 
-/* TikTok — fourth card */
 .social-stat:nth-child(4){
-  background:rgba(17,17,17,.04);
+  background:rgba(17,17,17,.045);
   border-top-color:#111;
 }
 
 .social-stat:nth-child(4)::before{
   content:"";
   position:absolute;
-  top:-4px;
-  left:0;
-  width:100%;
-  height:4px;
+  inset:-3px 0 auto;
+  height:3px;
   background:linear-gradient(
     90deg,
-    #25F4EE 0 18%,
+    #25f4ee 0 18%,
     #111 18% 82%,
-    #FE2C55 82% 100%
+    #fe2c55 82% 100%
   );
 }
 
@@ -1321,15 +1316,7 @@ a.social-stat:hover{transform:translateY(-2px);background:var(--cream);}
   color:#111;
 }
 
-a.social-stat:hover{
-  transform:translateY(-3px);
-  background:var(--off-white);
-  box-shadow:0 12px 28px rgba(20,32,24,.08);
-}
-
-
-/* CAPTAIN HERO — UPPER-LEFT FOCAL POSITION */
-
+/* Captain photo position */
 body[data-page="captain"] .cap-hero__media{
   background-size:cover;
   background-position:35% 20%;
@@ -1337,31 +1324,19 @@ body[data-page="captain"] .cap-hero__media{
   transform:none;
 }
 
-@media (max-width:768px){
-  body[data-page="captain"] .cap-hero__media{
-    background-position:55% 25%;
-    transform:none;
-  }
-}
-
-/* =========================================================
-   GALLERY — EQUAL 3-COLUMN GRID ON DESKTOP
-========================================================= */
-
+/* Gallery: equal three-column desktop layout */
 .gallery__masonry{
   columns:unset;
   display:grid;
-  grid-template-columns:repeat(3, minmax(0, 1fr));
+  grid-template-columns:repeat(3,minmax(0,1fr));
   gap:1.1rem;
 }
 
 .gallery__item{
   width:100%;
-  aspect-ratio:4 / 3;
+  aspect-ratio:4/3;
   margin:0;
   overflow:hidden;
-  border-radius:var(--radius);
-  background:var(--green-700);
 }
 
 .gallery__item img,
@@ -1369,64 +1344,22 @@ body[data-page="captain"] .cap-hero__media{
   width:100%;
   height:100%;
   min-height:0;
-  display:block;
   object-fit:cover;
   object-position:center;
 }
 
-/* Mobile — one natural-width column */
-@media (max-width:768px){
-  .gallery__masonry{
-    grid-template-columns:1fr;
-  }
+/* Desktop homepage */
+@media (min-width:769px){
 
-  .gallery__item{
-    aspect-ratio:auto;
-  }
-
-  .gallery__item img,
-  .gallery__item .ph{
-    width:100%;
-    height:auto;
-    min-height:220px;
-    object-fit:cover;
-  }
-}
-
-/* =========================================================
-   HOME HERO — DESKTOP PHOTO + LOCATION TEXT FIX
-========================================================= */
-
-@media (min-width:675px){
-
-  /* Show more of the upper part of the photo / lower the image */
   body[data-page="home"] .hero__media{
-    background-position:center 30%;
+    background-size:110% auto;
+    background-position:left 33%;
+    background-repeat:no-repeat;
     transform:none;
   }
 
-  /* Move the content below the navigation */
   body[data-page="home"] .hero__content{
     padding-top:6.5rem;
-  }
-
-  /* Bayawan City · Negros Oriental · Philippines */
-  body[data-page="home"] .hero__eyebrow{
-    position:relative;
-    z-index:2;
-    color:#f2d98d;
-    font-weight:600;
-    letter-spacing:.22em;
-    text-shadow:
-      0 2px 5px rgba(0,0,0,.9),
-      0 0 14px rgba(0,0,0,.65);
-  }
-}
-/* HOME HERO — PREVENT LOCATION TEXT FROM OVERLAPPING HEADER */
-
-@media (min-width:769px){
-
-  body[data-page="home"] .hero__content{
     transform:translateY(52px);
   }
 
@@ -1440,526 +1373,236 @@ body[data-page="captain"] .cap-hero__media{
       0 2px 5px rgba(0,0,0,.95),
       0 0 12px rgba(0,0,0,.75);
   }
+
+  .stats__inner{
+    padding:1.6rem var(--pad);
+  }
+
+  .stat{
+    min-height:110px;
+    padding:.8rem .6rem;
+  }
+
+  .stat__num{
+    font-size:clamp(2rem,3vw,3.1rem);
+  }
+
+  .stat__unit{
+    margin-top:.35rem;
+    font-size:.65rem;
+  }
+
+  .stat__label{
+    margin-top:.4rem;
+    font-size:.78rem;
+    line-height:1.25;
+  }
+
+  .social-reach__inner{
+    padding:1rem var(--pad);
+  }
+
+  .social-stat{
+    min-height:92px;
+    padding:.65rem .5rem;
+  }
+
+  .social-stat__value{
+    font-size:clamp(1.7rem,2.5vw,2.6rem);
+  }
+
+  .social-stat__platform{
+    margin-top:.25rem;
+    font-size:.58rem;
+  }
+
+  .social-stat__label{
+    margin-top:.3rem;
+    font-size:.68rem;
+  }
 }
-/* HOME HERO — MOVE SOLOMON'S FACE TO THE RIGHT ON DESKTOP */
 
-@media (min-width:769px){
-  body[data-page="home"] .hero__media{
-    background-size:110% auto;
-    background-position:left 33%;
-    background-repeat:no-repeat;
-    transform:none;
-  }/* =========================================================
-   MOBILE FIX — HERO TITLE + COMPACT STATS
-========================================================= */
-
+/* Mobile homepage */
 @media (max-width:768px){
 
-  /* Keep hero content below the mobile header */
   body[data-page="home"] .hero{
-    padding-top:92px;
-    min-height:auto;
     height:auto;
+    min-height:0;
+    max-height:none;
+    padding-top:78px;
+    align-items:stretch;
+  }
+
+  body[data-page="home"] .hero__media{
+    background-position:center 45%;
+    transform:none;
   }
 
   body[data-page="home"] .hero__content{
     position:relative;
-    z-index:3;
-    padding:
-      1.2rem
-      var(--pad)
-      2.2rem;
+    inset:auto;
+    padding:1rem 1.15rem 1.25rem;
     transform:none;
   }
 
-  body[data-page="home"] .hero__title{
-    margin-top:.35rem;
-    font-size:clamp(3.8rem,15vw,5.4rem);
-    line-height:.82;
-  }
-
   body[data-page="home"] .hero__eyebrow{
-    margin-top:0;
+    display:inline-block;
+    width:auto;
+    max-width:100%;
+    margin:0 0 .45rem;
+    padding:.28rem .45rem;
+    color:#fff3bd;
+    background:rgba(10,35,23,.62);
+    border-left:3px solid #c8d97b;
+    font-size:.44rem;
+    font-weight:700;
+    line-height:1.25;
+    letter-spacing:.08em;
+    white-space:normal;
+    text-shadow:
+      0 1px 2px #000,
+      0 0 7px rgba(0,0,0,.9);
   }
 
-  /* Farm statistics — compact 2 x 2 */
-  .stats{
-    padding:1.6rem var(--pad);
+  body[data-page="home"] .hero__title{
+    max-width:100%;
+    margin:0 0 .55rem;
+    padding:0;
+    overflow:visible;
+    font-size:clamp(2.45rem,10.5vw,3.35rem);
+    line-height:.88;
   }
 
-  .stats__inner{
+  body[data-page="home"] .hero__tagline{
+    margin:0 0 .5rem;
+    font-size:.82rem;
+    line-height:1.3;
+  }
+
+  body[data-page="home"] .hero__lede{
+    max-width:100%;
+    margin:0 0 .7rem;
+    font-size:.75rem;
+    line-height:1.4;
+  }
+
+  body[data-page="home"] .hero__actions{
     display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
+    grid-template-columns:1fr 1fr;
+    gap:.4rem;
+    margin-top:.7rem;
+  }
+
+  body[data-page="home"] .hero__actions .btn{
+    min-height:38px;
+    padding:.45rem .3rem;
+    font-size:.6rem;
+    text-align:center;
+  }
+
+  /* Farm statistics: one compact row */
+  .stats__inner{
+    padding:.3rem .35rem;
+    grid-template-columns:repeat(4,minmax(0,1fr));
     gap:0;
   }
 
   .stat{
-    min-height:145px;
-    padding:1.15rem .65rem;
+    min-height:58px;
+    padding:.35rem .08rem;
+    border-left:1px solid rgba(169,190,130,.2);
+  }
+
+  .stat:first-child{
+    border-left:none;
   }
 
   .stat__num{
-    font-size:clamp(2.8rem,12vw,4rem);
+    font-size:1.15rem;
     line-height:1;
   }
 
   .stat__unit{
-    margin-top:.55rem;
-    font-size:.72rem;
-    letter-spacing:.2em;
+    margin-top:.12rem;
+    font-size:.3rem;
+    line-height:1;
+    letter-spacing:.08em;
   }
 
   .stat__label{
-    margin-top:.65rem;
-    font-size:.88rem;
-    line-height:1.35;
+    margin-top:.13rem;
+    font-size:.34rem;
+    line-height:1.05;
   }
 
-  /* Social audience — compact 2 x 2 */
-  .social-stats{
-    display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
+  /* Social statistics in the same green area */
+  .social-reach{
+    background:var(--green-800);
+    border-bottom:none;
+  }
+
+  .social-reach__inner{
+    padding:.25rem .35rem .4rem;
+    grid-template-columns:repeat(4,minmax(0,1fr));
     gap:1px;
-    padding:0;
   }
 
   .social-stat{
-    min-height:128px;
-    padding:1rem .55rem .85rem;
+    min-height:58px;
+    padding:.3rem .08rem;
+    border-left:none;
+    border-top-width:2px;
+    background:rgba(255,255,255,.035);
   }
 
-  .social-stat__value,
-  .social-stat__num{
-    font-size:clamp(2.2rem,10vw,3.2rem);
+  .social-stat__value{
+    font-size:1.05rem;
     line-height:1;
   }
 
   .social-stat__platform{
-    margin-top:.45rem;
-    font-size:.7rem;
-    letter-spacing:.16em;
+    margin-top:.12rem;
+    font-size:.29rem;
+    line-height:1;
+    letter-spacing:.06em;
   }
 
-  .social-stat__label,
-  .social-stat__name{
-    margin-top:.5rem;
-    font-size:.82rem;
-    line-height:1.25;
-  }
-}
-}
-/* =========================================================
-   FINAL HERO + STATS SIZE OVERRIDE
-========================================================= */
-
-/* DESKTOP — stats reduced to around 65% of current size */
-@media (min-width:769px){
-
-  .stats{
-    padding:1.6rem var(--pad) !important;
+  .social-stat__label{
+    margin-top:.13rem;
+    font-size:.32rem;
+    line-height:1.05;
+    color:rgba(255,255,255,.76);
   }
 
-  .stat{
-    min-height:110px !important;
-    padding:.8rem .6rem !important;
-  }
-
-  .stat__num{
-    font-size:clamp(2rem,3vw,3.1rem) !important;
-    line-height:1 !important;
-  }
-
-  .stat__unit{
-    margin-top:.35rem !important;
-    font-size:.65rem !important;
-  }
-
-  .stat__label{
-    margin-top:.4rem !important;
-    font-size:.78rem !important;
-    line-height:1.25 !important;
-  }
-
-  .social-stat{
-    min-height:105px !important;
-    padding:.75rem .6rem !important;
-  }
-
-  .social-stat__value,
-  .social-stat__num{
-    font-size:clamp(1.9rem,2.8vw,3rem) !important;
-    line-height:1 !important;
-  }
-
-  .social-stat__platform{
-    margin-top:.3rem !important;
-    font-size:.62rem !important;
-  }
-
-  .social-stat__label,
-  .social-stat__name{
-    margin-top:.35rem !important;
-    font-size:.72rem !important;
-  }
-}
-
-
-/* MOBILE — hero title lower and statistics 20% smaller */
-@media (max-width:768px){
-
-  body[data-page="home"] .hero{
-    padding-top:90px !important;
-    min-height:auto !important;
-    height:auto !important;
-  }
-
-  body[data-page="home"] .hero__content{
-    position:relative !important;
-    padding:2.6rem var(--pad) 1.8rem !important;
-    transform:none !important;
-  }
-
-  body[data-page="home"] .hero__eyebrow{
-    margin-top:0 !important;
-    margin-bottom:.65rem !important;
-    font-size:.58rem !important;
-  }
-
-  body[data-page="home"] .hero__title{
-    font-size:clamp(3rem,12vw,4.3rem) !important;
-    line-height:.82 !important;
-    margin:0 0 .8rem !important;
-  }
-
-  body[data-page="home"] .hero__tagline{
-    font-size:1.12rem !important;
-    line-height:1.45 !important;
-    margin-bottom:.75rem !important;
-  }
-
-  body[data-page="home"] .hero__lede{
-    font-size:1rem !important;
-    line-height:1.55 !important;
-    margin-bottom:1.1rem !important;
-  }
-
-  body[data-page="home"] .hero__actions{
-    gap:.65rem !important;
-  }
-
-  body[data-page="home"] .hero__actions .btn{
-    min-height:52px !important;
-    padding:.8rem 1rem !important;
-  }
-
-  /* Main farm numbers */
-  .stats{
-    padding:1rem var(--pad) !important;
-  }
-
-  .stats__inner{
-    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
-  }
-
-  .stat{
-    min-height:105px !important;
-    padding:.7rem .35rem !important;
-  }
-
-  .stat__num{
-    font-size:clamp(2.15rem,9vw,3rem) !important;
-    line-height:1 !important;
-  }
-
-  .stat__unit{
-    margin-top:.35rem !important;
-    font-size:.61rem !important;
-    letter-spacing:.16em !important;
-  }
-
-  .stat__label{
-    margin-top:.4rem !important;
-    font-size:.72rem !important;
-    line-height:1.25 !important;
-  }
-
-  /* Social media numbers */
-  .social-stats{
-    padding:0 !important;
-    gap:1px !important;
-  }
-
-  .social-stat{
-    min-height:100px !important;
-    padding:.7rem .35rem !important;
-  }
-
-  .social-stat__value,
-  .social-stat__num{
-    font-size:clamp(1.9rem,8.5vw,2.7rem) !important;
-  }
-
-  .social-stat__platform{
-    margin-top:.3rem !important;
-    font-size:.58rem !important;
-    letter-spacing:.13em !important;
-  }
-
-  .social-stat__label,
-  .social-stat__name{
-    margin-top:.35rem !important;
-    font-size:.68rem !important;
-    line-height:1.2 !important;
-  }
-}
-/* =========================================================
-   MOBILE — COMPACT HERO + FARM STATS + SOCIAL STATS
-========================================================= */
-
-@media (max-width:768px){
-
-  /* HERO: keep all content below the fixed header */
-  body[data-page="home"] .hero{
-    height:auto !important;
-    min-height:0 !important;
-    max-height:none !important;
-    padding-top:96px !important;
-  }
-
-  body[data-page="home"] .hero__content{
-    position:relative !important;
-    inset:auto !important;
-    padding:1rem 1.25rem 1.4rem !important;
-    transform:none !important;
-  }
-
-  body[data-page="home"] .hero__eyebrow{
-    font-size:.48rem !important;
-    line-height:1.3 !important;
-    margin:0 0 .45rem !important;
-    letter-spacing:.14em !important;
-  }
-
-  /* Solomon Pagunsan — prevent clipping */
-  body[data-page="home"] .hero__title{
-    font-size:clamp(2.7rem,11vw,3.65rem) !important;
-    line-height:.88 !important;
-    margin:0 0 .65rem !important;
-    padding:0 !important;
-    max-width:100% !important;
-    overflow:visible !important;
-  }
-
-  body[data-page="home"] .hero__tagline{
-    font-size:.9rem !important;
-    line-height:1.35 !important;
-    margin:0 0 .6rem !important;
-  }
-
-  body[data-page="home"] .hero__lede{
-    font-size:.82rem !important;
-    line-height:1.45 !important;
-    margin:0 0 .8rem !important;
-    max-width:100% !important;
-  }
-
-  body[data-page="home"] .hero__actions{
-    display:grid !important;
-    grid-template-columns:1fr 1fr !important;
-    gap:.5rem !important;
-  }
-
-  body[data-page="home"] .hero__actions .btn{
-    min-height:42px !important;
-    padding:.55rem .45rem !important;
-    font-size:.67rem !important;
-  }
-
-  /* FARM STATS — very compact 2 x 2 */
-  .stats{
-    padding:.45rem .65rem !important;
-  }
-
-  .stats__inner{
-    display:grid !important;
-    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
-    gap:1px !important;
-  }
-
-  .stat{
-    min-height:78px !important;
-    padding:.45rem .25rem !important;
-  }
-
-  .stat__num{
-    font-size:1.75rem !important;
-    line-height:1 !important;
-  }
-
-  .stat__unit{
-    margin-top:.22rem !important;
-    font-size:.48rem !important;
-    line-height:1.1 !important;
-    letter-spacing:.14em !important;
-  }
-
-  .stat__label{
-    margin-top:.25rem !important;
-    font-size:.58rem !important;
-    line-height:1.15 !important;
-  }
-
-  /* SOCIAL STATS — very compact 2 x 2 */
-  .social-stats{
-    display:grid !important;
-    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
-    gap:1px !important;
-    padding:0 !important;
-    margin:0 !important;
-  }
-
-  .social-stat{
-    min-height:76px !important;
-    padding:.42rem .2rem !important;
-  }
-
-  .social-stat__value,
-  .social-stat__num{
-    font-size:1.65rem !important;
-    line-height:1 !important;
-  }
-
-  .social-stat__platform{
-    margin-top:.2rem !important;
-    font-size:.46rem !important;
-    line-height:1.1 !important;
-    letter-spacing:.11em !important;
-  }
-
-  .social-stat__label,
-  .social-stat__name{
-    margin-top:.22rem !important;
-    font-size:.56rem !important;
-    line-height:1.15 !important;
-  }
-}
-/* =========================================================
-   MOBILE FINAL COMPACT FIX
-   - readable Bayawan text
-   - stats reduced another 20%
-   - farm + social stats more compact
-   - social stats placed inside green section
-========================================================= */
-
-@media (max-width:768px){
-
-  /* BAYAWAN CITY TEXT — readable */
-  body[data-page="home"] .hero__eyebrow{
-    display:inline-block !important;
-    width:auto !important;
-    max-width:100% !important;
-    margin:0 0 .45rem !important;
-    padding:.32rem .5rem !important;
-
-    color:#fff3bd !important;
-    background:rgba(10,35,23,.58) !important;
-    border-left:3px solid #c8d97b !important;
-
-    font-size:.46rem !important;
-    font-weight:700 !important;
-    line-height:1.3 !important;
-    letter-spacing:.10em !important;
-    white-space:normal !important;
-
-    text-shadow:
-      0 1px 2px rgba(0,0,0,1),
-      0 0 8px rgba(0,0,0,.9) !important;
-  }
-
-  /* FARM STATS SECTION */
-  .stats{
-    padding:.2rem .35rem !important;
-  }
-
-  .stats__inner{
-    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
-    gap:0 !important;
-  }
-
-  .stat{
-    min-height:58px !important;
-    padding:.3rem .15rem !important;
-  }
-
-  .stat__num{
-    font-size:1.4rem !important;
-    line-height:.95 !important;
-  }
-
-  .stat__unit{
-    margin-top:.15rem !important;
-    font-size:.38rem !important;
-    line-height:1 !important;
-    letter-spacing:.10em !important;
-  }
-
-  .stat__label{
-    margin-top:.16rem !important;
-    font-size:.46rem !important;
-    line-height:1.1 !important;
-  }
-
-  /* SOCIAL STATS — SAME GREEN AREA */
-  .social-stats{
-    display:grid !important;
-    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
-    gap:1px !important;
-
-    margin:0 !important;
-    padding:.25rem .35rem .45rem !important;
-
-    background:var(--green-900) !important;
-  }
-
-  .social-stat{
-    min-height:64px !important;
-    padding:.34rem .12rem !important;
-    background:rgba(255,255,255,.035) !important;
-    border-top-width:2px !important;
-  }
-
-  .social-stat__value,
-  .social-stat__num{
-    font-size:1.2rem !important;
-    line-height:.95 !important;
-  }
-
-  .social-stat__platform{
-    margin-top:.15rem !important;
-    font-size:.34rem !important;
-    line-height:1 !important;
-    letter-spacing:.08em !important;
-  }
-
-  .social-stat__label,
-  .social-stat__name{
-    margin-top:.16rem !important;
-    font-size:.4rem !important;
-    line-height:1.05 !important;
-    color:rgba(255,255,255,.75) !important;
-  }
-
-  /* Keep brand colors */
   .social-stat:nth-child(1) .social-stat__value,
   .social-stat:nth-child(2) .social-stat__value{
-    color:#4c9aff !important;
+    color:#66a8ff;
   }
 
   .social-stat:nth-child(3) .social-stat__value{
-    color:#ff4b4b !important;
+    color:#ff6262;
   }
 
   .social-stat:nth-child(4) .social-stat__value{
-    color:#ffffff !important;
+    color:#fff;
+  }
+
+  body[data-page="captain"] .cap-hero__media{
+    background-position:55% 25%;
+  }
+
+  .gallery__masonry{
+    grid-template-columns:1fr;
+  }
+
+  .gallery__item{
+    aspect-ratio:auto;
+  }
+
+  .gallery__item img,
+  .gallery__item .ph{
+    height:auto;
+    min-height:220px;
+    object-fit:cover;
   }
 }
