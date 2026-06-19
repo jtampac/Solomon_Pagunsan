@@ -9,25 +9,26 @@
     "facebook": "https://www.facebook.com/solomon.pagunsan/",
     "messenger": "https://m.me/solomon.pagunsan",
     "youtube": "https://www.youtube.com/channel/UC9pCuD1xPVJnRhNmfoKoAug",
-    "tiktok": "https://www.tiktok.com/@solomon.pagunsan",
+    "tiktok": "https://www.tiktok.com/@king.ofalltrade",
     "instagram": "https://www.instagram.com/solomonpagunsan/",
     "whatsapp": "https://wa.me/63XXXXXXXXXX",
-    "email": "hello@solomonpagunsan.com"
+    "email": "hello@solomonpagunsan.com",
+    "facebookSecond": ""
   },
   "hero": {
     "eyebrow": "Bayawan City • Negros Oriental • Philippines",
     "titleLine1": "Solomon",
     "titleLine2": "Pagunsan",
-    "tagline": "Farmer • Inventor • Entrepreneur • Content Creator",
-    "lede": "He left the province chasing opportunity in the city. He came home and built it from the soil — one harvest at a time.",
+    "tagline": "The Captain of Negros • Farmer • Innovator • Educator",
+    "lede": "A self-made farmer whose field experience now reaches students, farmers, buyers, and viewers nationwide — from sugarcane fields to practical farm innovations.",
     "image": "images/sugarcane-field.jpg",
     "primaryCta": {
-      "label": "Explore the Farm",
-      "href": "farm.html"
+      "label": "Start with the Story",
+      "href": "captain.html"
     },
     "secondaryCta": {
-      "label": "Watch the Vlogs",
-      "href": "vlogs.html"
+      "label": "Visit Farm Learning",
+      "href": "farm-learning.html"
     }
   },
   "stats": [
@@ -68,40 +69,40 @@
   ],
   "homeTeasers": [
     {
-      "title": "The Farm",
-      "text": "Sugarcane, cassava, corn, carabao and livestock — a complete working agricultural ecosystem.",
-      "href": "farm.html",
-      "linkLabel": "See the land"
-    },
-    {
       "title": "The Captain of Negros",
-      "text": "How a self-taught farmer became one of the province's most followed and respected voices in practical agriculture.",
+      "text": "The full story behind the name, the influence, and the public personality people recognize across Negros.",
       "href": "captain.html",
       "linkLabel": "Read the story"
     },
     {
-      "title": "Workshop",
-      "text": "Tools built and modified by hand to solve real problems in the field.",
-      "href": "workshop.html",
-      "linkLabel": "Into the workshop"
+      "title": "Farm Learning",
+      "text": "A working farm that became a practical learning site for agriculture students.",
+      "href": "farm-learning.html",
+      "linkLabel": "See student learning"
     },
     {
-      "title": "Farm Learning",
-      "text": "A working farm that became a classroom for agriculture students.",
-      "href": "farm-learning.html",
-      "linkLabel": "Learn on the farm"
+      "title": "The Farm",
+      "text": "Sugarcane, cassava, corn, carabao, livestock, and the systems that keep the land productive.",
+      "href": "farm.html",
+      "linkLabel": "Explore the farm"
+    },
+    {
+      "title": "Built by Hand",
+      "text": "Field tools and modifications built by hand to solve real farming problems.",
+      "href": "farm.html#workshop",
+      "linkLabel": "See farm innovations"
     },
     {
       "title": "Planting Materials & Tools",
-      "text": "Field-proven cuttings, setts and tools Solomon uses and supplies nationwide.",
+      "text": "Cassava cuttings, Napier cuttings, sugarcane setts, and modified tools supplied by inquiry nationwide.",
       "href": "products.html",
       "linkLabel": "View materials"
     },
     {
       "title": "Vlogs",
-      "text": "Honest documentation of life and work on a Negros farm.",
+      "text": "Practical farming, daily work, community life, and field documentation.",
       "href": "vlogs.html",
-      "linkLabel": "Watch now"
+      "linkLabel": "Watch videos"
     }
   ],
   "about": {
@@ -195,11 +196,12 @@
       }
     ],
     "reach": {
-      "facebookFollowers": "",
-      "youtubeSubscribers": "",
-      "tiktokFollowers": "",
+      "facebookFollowers": "1.3M",
+      "youtubeSubscribers": "1.02K",
+      "tiktokFollowers": "14.8K",
       "monthlyReach": "",
-      "note": "Audience figures available on request — see Contact."
+      "note": "Audience figures change over time and can be updated from the CMS.",
+      "facebookSecondaryFollowers": "238K"
     },
     "persona": {
       "kicker": "Off the Clock",
@@ -308,13 +310,13 @@
       {
         "name": "Equipment Modifications",
         "note": "Repaired & re-engineered",
-        "img": "images/Tool_1.jpg",
+        "img": "images/Tools_1.jpg",
         "tall": false
       },
       {
         "name": "Fabrication Projects",
         "note": "Welding & metalwork",
-        "img": "images/Tool_2.jpg",
+        "img": "images/Tools_2.jpg",
         "tall": false
       },
       {
@@ -327,8 +329,8 @@
   },
   "farmLearning": {
     "kicker": "Farm Learning",
-    "title": "A farm that became a classroom",
-    "intro": "Although Solomon Pagunsan did not attend college, his real-world farming experience has become a valuable learning resource for agriculture students. Many students visit his farm to observe practical farming techniques, gain field experience, and learn directly from his years of hands-on knowledge.",
+    "title": "The farm as a real classroom",
+    "intro": "Although Solomon Pagunsan did not attend college, his real-world farming experience has become a valuable learning resource for agriculture students. Students visit his farm to observe practical techniques, ask field questions, and learn directly from years of hands-on work.",
     "points": [
       {
         "heading": "Practical techniques",
@@ -363,9 +365,10 @@
       }
     ],
     "gallery": [
-      "images/farm-03.jpg",
       "images/farm-04.jpg",
-      "images/farm-01.jpg"
+      "images/Gallery_14.jpg",
+      "images/Gallery_12.jpg",
+      "images/farm-05.jpg"
     ],
     "ctaLabel": "Arrange a student visit"
   },
@@ -596,7 +599,7 @@
         "logo": "images/sponsors/MMTT_Logo.jpg",
         "url": "https://www.facebook.com/p/MMTT-Laptop-Service-Center-Bayawan-100063534807228/"
       },
-     {
+      {
         "name": "Skygo Philippines",
         "logo": "images/sponsors/Skygo.png",
         "url": "https://www.facebook.com/skygoph"
@@ -615,14 +618,39 @@
     "supporters": [
       {
         "name": "Local agricultural suppliers",
-        "text": "Seed stock, feed, and inputs that keep the farm running."
+        "text": "Planting materials, feed, and farm inputs that keep the operation running."
       },
       {
         "name": "Community & cooperative partners",
         "text": "Local groups Solomon works with and supports."
       }
     ],
-    "ctaLabel": "Become a Partner"
+    "ctaLabel": "Become a Partner",
+    "gallery": {
+      "kicker": "Partnerships in Action",
+      "title": "Working together, on and beyond the farm",
+      "intro": "Selected moments from sponsor collaborations, product activities, events, and community partnerships with Solomon.",
+      "items": [
+        {
+          "img": "images/Sponsor_1.jpg",
+          "partner": "JI Telecom",
+          "caption": "A partner collaboration with Solomon.",
+          "active": true
+        },
+        {
+          "img": "images/Sponsor_3.jpg",
+          "partner": "MMTT Laptop Services",
+          "caption": "Meeting and collaboration with a local technology partner.",
+          "active": true
+        },
+        {
+          "img": "images/Sponpor_3.jpg",
+          "partner": "GoTraktora",
+          "caption": "Agricultural partnership and product activity in Negros.",
+          "active": true
+        }
+      ]
+    }
   },
   "press": {
     "kicker": "Press & Recognition",
@@ -701,5 +729,48 @@
       "text": "Bayawan City, Negros Oriental, Philippines"
     },
     "formNote": "Send an inquiry and Solomon will get back to you. Fields marked are required."
+  },
+  "homeAuthority": {
+    "kicker": "Solomon Pagunsan",
+    "title": "Farmer. Innovator. Teacher by experience.",
+    "lead": "Built from daily fieldwork, Solomon’s story connects farming, practical invention, student learning, and community influence.",
+    "cards": [
+      {
+        "title": "Farmer",
+        "text": "A working farm shaped by hands-on experience in crops, livestock, and daily field operations.",
+        "href": "farm.html"
+      },
+      {
+        "title": "Innovator",
+        "text": "Tools and methods modified to solve real problems in the field.",
+        "href": "farm.html#workshop"
+      },
+      {
+        "title": "Educator",
+        "text": "Agriculture students visit to learn beyond the classroom.",
+        "href": "farm-learning.html"
+      },
+      {
+        "title": "Community Figure",
+        "text": "Known across Negros for both his farming work and public personality.",
+        "href": "captain.html"
+      }
+    ]
+  },
+  "homeSpotlight": {
+    "kicker": "The Strongest Story",
+    "title": "A farm that now teaches students",
+    "text": "Solomon did not attend college, yet his years of practical farming experience now help agriculture students understand farming beyond the classroom. At the farm, they observe crops, tools, livestock, and decisions shaped by real daily work.",
+    "image": "images/farm-03.jpg",
+    "ctaLabel": "See Farm Learning",
+    "href": "farm-learning.html"
+  },
+  "materialsSpotlight": {
+    "kicker": "Planting Materials & Tools",
+    "title": "Field-tested materials, supplied by inquiry",
+    "text": "Cassava cuttings, Napier grass cuttings, sugarcane setts, and modified spading tools are available through direct inquiry, with nationwide delivery subject to stock and arrangement.",
+    "image": "images/Napier_1.jpg",
+    "ctaLabel": "View Materials",
+    "href": "products.html"
   }
 }
