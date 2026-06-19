@@ -63,6 +63,15 @@
       ]
     },
     {
+      id: "stats", group: "Home", label: "Farm Statistics", type: "list", path: "stats",
+      intro: "The four farm figures shown below the homepage hero.", itemLabel: "unit",
+      itemFields: [
+        { key: "num", label: "Number", type: "text" },
+        { key: "unit", label: "Unit", type: "text" },
+        { key: "label", label: "Description", type: "text" }
+      ]
+    },
+    {
       id: "announcements", group: "Home", label: "Announcements", type: "list", path: "announcements",
       intro: "Notices on the home page. Untick Active to hide without deleting.", itemLabel: "title",
       itemFields: [
@@ -80,6 +89,44 @@
         { key: "text", label: "Text", type: "textarea" },
         { key: "href", label: "Links to (page)", type: "text" },
         { key: "linkLabel", label: "Link label", type: "text" }
+      ]
+    },
+    {
+      id: "homeAuthority", group: "Home", label: "Authority Section", type: "object", path: "homeAuthority",
+      intro: "Homepage credibility layer: positions Solomon as farmer, innovator, educator, and community figure.",
+      fields: [
+        { key: "kicker", label: "Kicker", type: "text" },
+        { key: "title", label: "Title", type: "text" },
+        { key: "lead", label: "Lead paragraph", type: "textarea" },
+        { key: "cards", label: "Authority cards", type: "list", itemLabel: "title", itemFields: [
+          { key: "title", label: "Title", type: "text" },
+          { key: "text", label: "Text", type: "textarea" },
+          { key: "href", label: "Page link", type: "text" }
+        ]}
+      ]
+    },
+    {
+      id: "homeSpotlight", group: "Home", label: "Farm Learning Spotlight", type: "object", path: "homeSpotlight",
+      intro: "Homepage feature block for the student-learning story.",
+      fields: [
+        { key: "kicker", label: "Kicker", type: "text" },
+        { key: "title", label: "Title", type: "text" },
+        { key: "text", label: "Text", type: "textarea" },
+        { key: "image", label: "Image", type: "image" },
+        { key: "ctaLabel", label: "Button label", type: "text" },
+        { key: "href", label: "Button link", type: "text" }
+      ]
+    },
+    {
+      id: "materialsSpotlight", group: "Home", label: "Materials Spotlight", type: "object", path: "materialsSpotlight",
+      intro: "Homepage conversion block for planting materials and tools.",
+      fields: [
+        { key: "kicker", label: "Kicker", type: "text" },
+        { key: "title", label: "Title", type: "text" },
+        { key: "text", label: "Text", type: "textarea" },
+        { key: "image", label: "Image", type: "image" },
+        { key: "ctaLabel", label: "Button label", type: "text" },
+        { key: "href", label: "Button link", type: "text" }
       ]
     },
 
@@ -120,7 +167,8 @@
           { key: "title", label: "Title", type: "text" },
           { key: "text", label: "Text", type: "textarea" } ] },
         { key: "reach", label: "Social reach", type: "object", fields: [
-          { key: "facebookFollowers", label: "Facebook followers", type: "text" },
+          { key: "facebookFollowers", label: "Main Facebook followers", type: "text" },
+          { key: "facebookSecondaryFollowers", label: "Second Facebook followers", type: "text" },
           { key: "youtubeSubscribers", label: "YouTube subscribers", type: "text" },
           { key: "tiktokFollowers", label: "TikTok followers", type: "text" },
           { key: "monthlyReach", label: "Monthly reach", type: "text" },
@@ -168,7 +216,8 @@
 
     /* ---------- WORKSHOP ---------- */
     {
-      id: "workshop", group: "Workshop", label: "Workshop", type: "object", path: "workshop",
+      id: "workshop", group: "The Farm", label: "Built by Hand / Workshop", type: "object", path: "workshop",
+      intro: "Shown as the Built by Hand section inside The Farm page.",
       fields: [
         { key: "kicker", label: "Kicker", type: "text" },
         { key: "title", label: "Title (HTML ok)", type: "text" },
@@ -264,6 +313,15 @@
           { key: "name", label: "Name", type: "text" },
           { key: "logo", label: "Logo", type: "image" },
           { key: "url", label: "Website", type: "url" } ] },
+        { key: "gallery", label: "Partnership photo gallery", type: "object", fields: [
+          { key: "kicker", label: "Kicker", type: "text" },
+          { key: "title", label: "Title", type: "text" },
+          { key: "intro", label: "Intro", type: "textarea" },
+          { key: "items", label: "Photos", type: "list", itemLabel: "partner", itemFields: [
+            { key: "img", label: "Image", type: "image" },
+            { key: "partner", label: "Partner / sponsor", type: "text" },
+            { key: "caption", label: "Caption", type: "textarea" },
+            { key: "active", label: "Show on site", type: "checkbox" } ] } ] },
         { key: "supporters", label: "Supporters / organizations", type: "list", itemLabel: "name", itemFields: [
           { key: "name", label: "Name", type: "text" },
           { key: "text", label: "Text", type: "textarea" } ] },
@@ -313,6 +371,7 @@
         { key: "email", label: "Email", type: "email" },
         { key: "whatsapp", label: "WhatsApp link", type: "url" },
         { key: "facebook", label: "Facebook", type: "url" },
+        { key: "facebookSecond", label: "Second Facebook account", type: "url" },
         { key: "messenger", label: "Messenger", type: "url" },
         { key: "youtube", label: "YouTube", type: "url" },
         { key: "tiktok", label: "TikTok", type: "url" },
