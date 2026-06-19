@@ -1449,6 +1449,103 @@ body[data-page="captain"] .cap-hero__media{
     background-position:left 33%;
     background-repeat:no-repeat;
     transform:none;
+  }/* =========================================================
+   MOBILE FIX — HERO TITLE + COMPACT STATS
+========================================================= */
+
+@media (max-width:768px){
+
+  /* Keep hero content below the mobile header */
+  body[data-page="home"] .hero{
+    padding-top:92px;
+    min-height:auto;
+    height:auto;
   }
+
+  body[data-page="home"] .hero__content{
+    position:relative;
+    z-index:3;
+    padding:
+      1.2rem
+      var(--pad)
+      2.2rem;
+    transform:none;
+  }
+
+  body[data-page="home"] .hero__title{
+    margin-top:.35rem;
+    font-size:clamp(3.8rem,15vw,5.4rem);
+    line-height:.82;
+  }
+
+  body[data-page="home"] .hero__eyebrow{
+    margin-top:0;
+  }
+
+  /* Farm statistics — compact 2 x 2 */
+  .stats{
+    padding:1.6rem var(--pad);
+  }
+
+  .stats__inner{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:0;
+  }
+
+  .stat{
+    min-height:145px;
+    padding:1.15rem .65rem;
+  }
+
+  .stat__num{
+    font-size:clamp(2.8rem,12vw,4rem);
+    line-height:1;
+  }
+
+  .stat__unit{
+    margin-top:.55rem;
+    font-size:.72rem;
+    letter-spacing:.2em;
+  }
+
+  .stat__label{
+    margin-top:.65rem;
+    font-size:.88rem;
+    line-height:1.35;
+  }
+
+  /* Social audience — compact 2 x 2 */
+  .social-stats{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:1px;
+    padding:0;
+  }
+
+  .social-stat{
+    min-height:128px;
+    padding:1rem .55rem .85rem;
+  }
+
+  .social-stat__value,
+  .social-stat__num{
+    font-size:clamp(2.2rem,10vw,3.2rem);
+    line-height:1;
+  }
+
+  .social-stat__platform{
+    margin-top:.45rem;
+    font-size:.7rem;
+    letter-spacing:.16em;
+  }
+
+  .social-stat__label,
+  .social-stat__name{
+    margin-top:.5rem;
+    font-size:.82rem;
+    line-height:1.25;
+  }
+}
 }
 
