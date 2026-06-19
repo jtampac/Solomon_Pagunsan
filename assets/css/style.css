@@ -1548,4 +1548,167 @@ body[data-page="captain"] .cap-hero__media{
   }
 }
 }
+/* =========================================================
+   FINAL HERO + STATS SIZE OVERRIDE
+========================================================= */
 
+/* DESKTOP — stats reduced to around 65% of current size */
+@media (min-width:769px){
+
+  .stats{
+    padding:1.6rem var(--pad) !important;
+  }
+
+  .stat{
+    min-height:110px !important;
+    padding:.8rem .6rem !important;
+  }
+
+  .stat__num{
+    font-size:clamp(2rem,3vw,3.1rem) !important;
+    line-height:1 !important;
+  }
+
+  .stat__unit{
+    margin-top:.35rem !important;
+    font-size:.65rem !important;
+  }
+
+  .stat__label{
+    margin-top:.4rem !important;
+    font-size:.78rem !important;
+    line-height:1.25 !important;
+  }
+
+  .social-stat{
+    min-height:105px !important;
+    padding:.75rem .6rem !important;
+  }
+
+  .social-stat__value,
+  .social-stat__num{
+    font-size:clamp(1.9rem,2.8vw,3rem) !important;
+    line-height:1 !important;
+  }
+
+  .social-stat__platform{
+    margin-top:.3rem !important;
+    font-size:.62rem !important;
+  }
+
+  .social-stat__label,
+  .social-stat__name{
+    margin-top:.35rem !important;
+    font-size:.72rem !important;
+  }
+}
+
+
+/* MOBILE — hero title lower and statistics 20% smaller */
+@media (max-width:768px){
+
+  body[data-page="home"] .hero{
+    padding-top:90px !important;
+    min-height:auto !important;
+    height:auto !important;
+  }
+
+  body[data-page="home"] .hero__content{
+    position:relative !important;
+    padding:2.6rem var(--pad) 1.8rem !important;
+    transform:none !important;
+  }
+
+  body[data-page="home"] .hero__eyebrow{
+    margin-top:0 !important;
+    margin-bottom:.65rem !important;
+    font-size:.58rem !important;
+  }
+
+  body[data-page="home"] .hero__title{
+    font-size:clamp(3rem,12vw,4.3rem) !important;
+    line-height:.82 !important;
+    margin:0 0 .8rem !important;
+  }
+
+  body[data-page="home"] .hero__tagline{
+    font-size:1.12rem !important;
+    line-height:1.45 !important;
+    margin-bottom:.75rem !important;
+  }
+
+  body[data-page="home"] .hero__lede{
+    font-size:1rem !important;
+    line-height:1.55 !important;
+    margin-bottom:1.1rem !important;
+  }
+
+  body[data-page="home"] .hero__actions{
+    gap:.65rem !important;
+  }
+
+  body[data-page="home"] .hero__actions .btn{
+    min-height:52px !important;
+    padding:.8rem 1rem !important;
+  }
+
+  /* Main farm numbers */
+  .stats{
+    padding:1rem var(--pad) !important;
+  }
+
+  .stats__inner{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+
+  .stat{
+    min-height:105px !important;
+    padding:.7rem .35rem !important;
+  }
+
+  .stat__num{
+    font-size:clamp(2.15rem,9vw,3rem) !important;
+    line-height:1 !important;
+  }
+
+  .stat__unit{
+    margin-top:.35rem !important;
+    font-size:.61rem !important;
+    letter-spacing:.16em !important;
+  }
+
+  .stat__label{
+    margin-top:.4rem !important;
+    font-size:.72rem !important;
+    line-height:1.25 !important;
+  }
+
+  /* Social media numbers */
+  .social-stats{
+    padding:0 !important;
+    gap:1px !important;
+  }
+
+  .social-stat{
+    min-height:100px !important;
+    padding:.7rem .35rem !important;
+  }
+
+  .social-stat__value,
+  .social-stat__num{
+    font-size:clamp(1.9rem,8.5vw,2.7rem) !important;
+  }
+
+  .social-stat__platform{
+    margin-top:.3rem !important;
+    font-size:.58rem !important;
+    letter-spacing:.13em !important;
+  }
+
+  .social-stat__label,
+  .social-stat__name{
+    margin-top:.35rem !important;
+    font-size:.68rem !important;
+    line-height:1.2 !important;
+  }
+}
