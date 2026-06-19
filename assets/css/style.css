@@ -1843,3 +1843,123 @@ body[data-page="captain"] .cap-hero__media{
     line-height:1.15 !important;
   }
 }
+/* =========================================================
+   MOBILE FINAL COMPACT FIX
+   - readable Bayawan text
+   - stats reduced another 20%
+   - farm + social stats more compact
+   - social stats placed inside green section
+========================================================= */
+
+@media (max-width:768px){
+
+  /* BAYAWAN CITY TEXT — readable */
+  body[data-page="home"] .hero__eyebrow{
+    display:inline-block !important;
+    width:auto !important;
+    max-width:100% !important;
+    margin:0 0 .45rem !important;
+    padding:.32rem .5rem !important;
+
+    color:#fff3bd !important;
+    background:rgba(10,35,23,.58) !important;
+    border-left:3px solid #c8d97b !important;
+
+    font-size:.46rem !important;
+    font-weight:700 !important;
+    line-height:1.3 !important;
+    letter-spacing:.10em !important;
+    white-space:normal !important;
+
+    text-shadow:
+      0 1px 2px rgba(0,0,0,1),
+      0 0 8px rgba(0,0,0,.9) !important;
+  }
+
+  /* FARM STATS SECTION */
+  .stats{
+    padding:.2rem .35rem !important;
+  }
+
+  .stats__inner{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:0 !important;
+  }
+
+  .stat{
+    min-height:58px !important;
+    padding:.3rem .15rem !important;
+  }
+
+  .stat__num{
+    font-size:1.4rem !important;
+    line-height:.95 !important;
+  }
+
+  .stat__unit{
+    margin-top:.15rem !important;
+    font-size:.38rem !important;
+    line-height:1 !important;
+    letter-spacing:.10em !important;
+  }
+
+  .stat__label{
+    margin-top:.16rem !important;
+    font-size:.46rem !important;
+    line-height:1.1 !important;
+  }
+
+  /* SOCIAL STATS — SAME GREEN AREA */
+  .social-stats{
+    display:grid !important;
+    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+    gap:1px !important;
+
+    margin:0 !important;
+    padding:.25rem .35rem .45rem !important;
+
+    background:var(--green-900) !important;
+  }
+
+  .social-stat{
+    min-height:64px !important;
+    padding:.34rem .12rem !important;
+    background:rgba(255,255,255,.035) !important;
+    border-top-width:2px !important;
+  }
+
+  .social-stat__value,
+  .social-stat__num{
+    font-size:1.2rem !important;
+    line-height:.95 !important;
+  }
+
+  .social-stat__platform{
+    margin-top:.15rem !important;
+    font-size:.34rem !important;
+    line-height:1 !important;
+    letter-spacing:.08em !important;
+  }
+
+  .social-stat__label,
+  .social-stat__name{
+    margin-top:.16rem !important;
+    font-size:.4rem !important;
+    line-height:1.05 !important;
+    color:rgba(255,255,255,.75) !important;
+  }
+
+  /* Keep brand colors */
+  .social-stat:nth-child(1) .social-stat__value,
+  .social-stat:nth-child(2) .social-stat__value{
+    color:#4c9aff !important;
+  }
+
+  .social-stat:nth-child(3) .social-stat__value{
+    color:#ff4b4b !important;
+  }
+
+  .social-stat:nth-child(4) .social-stat__value{
+    color:#ffffff !important;
+  }
+}
