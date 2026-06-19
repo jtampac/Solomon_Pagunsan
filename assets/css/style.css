@@ -1606,3 +1606,103 @@ body[data-page="captain"] .cap-hero__media{
     object-fit:cover;
   }
 }
+/* =========================================================
+   MOBILE FINAL — EYEBROW UP + COMPACT FARM/SOCIAL STATS
+========================================================= */
+
+@media (max-width:768px){
+
+  /* Move Bayawan text higher */
+  body[data-page="home"] .hero__eyebrow{
+    margin-top:-.35rem;
+    margin-bottom:.35rem;
+    padding:.24rem .42rem;
+    font-size:.42rem;
+    line-height:1.2;
+  }
+
+  /* Compress farm stats */
+  .stats{
+    background:var(--green-800);
+  }
+
+  .stats__inner{
+    padding:.35rem .35rem .15rem;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:0;
+  }
+
+  .stat{
+    min-height:50px;
+    padding:.22rem .05rem;
+  }
+
+  .stat__num{
+    font-size:1rem;
+    line-height:.95;
+  }
+
+  .stat__unit{
+    margin-top:.08rem;
+    font-size:.27rem;
+    letter-spacing:.07em;
+  }
+
+  .stat__label{
+    margin-top:.09rem;
+    font-size:.29rem;
+    line-height:1.02;
+  }
+
+  /* Put social stats inside the same green area */
+  .social-reach{
+    background:var(--green-800);
+    border:0;
+  }
+
+  .social-reach__inner{
+    padding:.1rem .35rem .35rem;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:1px;
+  }
+
+  .social-stat{
+    min-height:52px;
+    padding:.22rem .05rem;
+    background:rgba(255,255,255,.04);
+    border-left:0;
+    border-top-width:2px;
+  }
+
+  .social-stat__value{
+    font-size:.95rem;
+    line-height:.95;
+  }
+
+  .social-stat__platform{
+    margin-top:.08rem;
+    font-size:.25rem;
+    line-height:1;
+    letter-spacing:.05em;
+  }
+
+  .social-stat__label{
+    margin-top:.08rem;
+    font-size:.27rem;
+    line-height:1;
+    color:rgba(255,255,255,.72);
+  }
+
+  .social-stat:nth-child(1),
+  .social-stat:nth-child(2){
+    background:rgba(24,119,242,.08);
+  }
+
+  .social-stat:nth-child(3){
+    background:rgba(255,0,0,.07);
+  }
+
+  .social-stat:nth-child(4){
+    background:rgba(255,255,255,.05);
+  }
+}
