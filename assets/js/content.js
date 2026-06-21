@@ -671,7 +671,7 @@
           "active": true
         },
         {
-          "img": "images/Sponpor_3.jpg",
+          "img": "images/sponsor_gotraktora.png",
           "partner": "GoTraktora",
           "caption": "Agricultural partnership and product activity in Negros.",
           "active": true
