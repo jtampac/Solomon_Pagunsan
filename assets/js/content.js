@@ -372,7 +372,7 @@
         "text": "Decades of hands-on knowledge, shared directly. Solomon answers questions from the perspective of someone who built the operation himself."
       }
     ],
-    "image": "images/farm-03.jpg",
+    "image": "images/Students_1.png",
     "modes": [
       {
         "title": "Educational tours",
@@ -788,7 +788,7 @@
     "kicker": "The Strongest Story",
     "title": "A farm that now teaches students",
     "text": "Solomon did not attend college, yet his years of practical farming experience now help agriculture students understand farming beyond the classroom. At the farm, they observe crops, tools, livestock, and decisions shaped by real daily work.",
-    "image": "images/farm-03.jpg",
+    "image": "images/Students_1.png",
     "ctaLabel": "See Farm Learning",
     "href": "farm-learning.html"
   },
