@@ -19,7 +19,7 @@ values (1, $content${
     "instagram": "https://www.instagram.com/solomonpagunsan/",
     "whatsapp": "https://wa.me/63XXXXXXXXXX",
     "email": "hello@solomonpagunsan.com",
-    "facebookSecond": ""
+    "facebookSecond": "https://faceboo.com/MomonPagunsan2/"
   },
   "hero": {
     "eyebrow": "Bayawan City • Negros Oriental • Philippines",
