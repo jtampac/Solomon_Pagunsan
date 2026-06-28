@@ -626,9 +626,9 @@
         "logo": "images/sponsors/MMTT_Logo.jpg",
         "url": "https://www.facebook.com/p/MMTT-Laptop-Service-Center-Bayawan-100063534807228/"
       },
-      {
+       {
         "name": "ADM",
-        "logo": "images/sponsors/Sponsor_ADM.png",
+        "logo": "images/sponsors/adm-logo.webp",
         "url": "https://www.adm.com/en-us/"
       },
       {
