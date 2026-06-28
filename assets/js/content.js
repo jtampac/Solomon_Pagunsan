@@ -670,18 +670,18 @@
           "caption": "Meeting and collaboration with a local technology partner.",
           "active": true
         },
-        {
-          "img": "images/sponsor_gotraktora.png",
-          "partner": "GoTraktora",
-          "caption": "Agricultural partnership and product activity in Negros.",
-          "active": true
-        }
-        {
-          "img": "images/Sponsor_ADM.png",
-          "partner": "ADM",
-          "caption": "Official feed partner supporting Solomon Pagunsan’s hog farming advocacy through UltraPak Hog Feeds.",
-          "active": true
-        }
+      {
+     "img": "images/sponsor_gotraktora.png",
+     "partner": "GoTraktora",
+     "caption": "Agricultural partnership and product activity in Negros.",
+     "active": true
+      },
+   {
+  "img": "images/Sponsor_ADM.png",
+  "partner": "ADM",
+  "caption": "Official Animal Nutrition Partner supporting Solomon Pagunsan's sustainable hog farming advocacy.",
+  "active": true
+   }
       ]
     }
   },
