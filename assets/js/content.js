@@ -677,7 +677,7 @@
      "active": true
       },
    {
-  "img": "images/Sponsor_ADM.png",
+  "img": "images/sponsors/Sponsor_ADM.png",
   "partner": "ADM",
   "caption": "Official Animal Nutrition Partner supporting Solomon Pagunsan's sustainable hog farming advocacy.",
   "active": true
