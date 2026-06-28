@@ -676,6 +676,12 @@
           "caption": "Agricultural partnership and product activity in Negros.",
           "active": true
         }
+        {
+          "img": "images/Sponsor_ADM.png",
+          "partner": "ADM",
+          "caption": "Official feed partner supporting Solomon Pagunsan’s hog farming advocacy through UltraPak Hog Feeds.",
+          "active": true
+        }
       ]
     }
   },
